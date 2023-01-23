@@ -26,24 +26,24 @@ body {
 .top-h1{
     font-family: Neue Haas Unica Pro;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 54px;
     text-align: center;
 }
 .main-top-h1{
     color: #F62B57;
-    /* text-shadow: 0px 1px 2px #000000; */
+    text-shadow: 0px 1px 2px #000000;
     text-decoration: none;
 }
 .typewrite{
     transition: smooth;
     text-decoration: none;
     color:#F62B57;
+    -webkit-text-stroke: 1px black;
 }
 .main-top-h2{
     margin: 0 0 1rem 0;
 }
 .font-pg{
-    font-family: Neue Hass Unica Pro;
     font-style: normal;
     font-weight: 400;
     font-size: 21px;
