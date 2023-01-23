@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding:0;
+}
+.main-wrapper{
+    padding:2%;
+}
+.main-logo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    margin: 0 0 3rem 0;
+}
+.top-logo{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+.top-h1{
+    font-family: Neue Haas Unica Pro;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+}
+.main-top-h1{
+    color: #F62B57;
+}
+.main-top-h2{
+    margin: 0 0 1rem 0;
+}
+.font-pg{
+    font-family: Neue Hass Unica Pro;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    text-align: center;
+}
+.whats-logo {
+    width: 7%;
+    position: relative;
+    top: 10px;
+    padding: 0 5px 0 0;
+}
+.email-wrapper {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0 4rem 0;
+}
+.email-input {
+    margin: 0 0 0 50px;
+    text-align: center;
+}
+.form-input{
+    width: 330px;
+    line-height: 24px;
+    padding: 10px 15px 10px 15px;
+    border: 1px solid #000000;
+    font-size: 18px;
+    box-shadow: rgb(0 0 0 / 30%) -1.6px 2.4px 3.2px;
+}
+.form-btn {
+    display: inline-flex;
+    width: 300px;
+    background-color: #F62B57;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 15px 15px 15px;
+    margin: auto 0 auto 1rem;
+    color: white;
+    font-size: 16px;
+    font-family: Neue Haas Unica Pro;
+    font-weight: 700;
+    cursor: pointer;
+}
+.btn-arrow {
+    width: 15%;
+    vertical-align: middle;
+    padding: 0px 0px 0px 10px;
+}
+.custom-card{
+    color:#808080;
+    font-family: Neue Haas Unica Pro;
+    font-size: 14px;
+    font-weight: 400;
+}
+.card-credit {
+    padding: 0px 10px 0 0;
+}
+.card-features{
+    margin: 10px 0 0 0;
+}
+.tick-mark{
+    width: 4%;
+    padding: 0 5px 0px 5px;
+}
+.images-wrapper-desktop{
+    padding: 0 10rem 0 10rem;
+}
+.images-wrapper-desktop img{
+    width: 100%;
+}
+.footer {
+    display: flex;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 2rem 10rem 2rem 10rem;
+}
+.footer-main-content{
+    text-align: start;
+    font-weight: 700;
+    font-size: 24px;
+    font-family: Neue Haas Unica Pro;
+    margin: 0 0 15px 0;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 32px;
+    font-family: Neue Haas Unica Pro;
+}
+.footer-social-content {
+    line-height: 24px;
+}
+.fs2{
+    text-align: start;
+}
+.footer-social-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 12px 0 28px 0;
+}
+.footer-link {
+    width: 11%;
+    text-align: start;
+    margin: 0 5px 0 0px;
+}
+.social-logo {
+    width: 100%;
+}
+.footer-content-mobile a, .fy4 a, .a4 a{
+    text-decoration: none;
+    color: black;
+}
+@media (min-width:1001px){
+    .images-wrapper-mobile{
+        display: none;
+    }
+}
+@media (max-width:1000px){
+    .footer-content-mobile a, .fy4 a, .a4 a {
+        color: #666666;
+    }
+    .images-wrapper-desktop{
+        display: none;
+    }
+    .images-wrapper-mobile{
+        padding: 0 2rem 0 2rem;
+    }
+    .images-wrapper-mobile img{
+        width: 100%;
+    }
+    .main-top-h2 {
+        margin: 0 7rem 1rem 7rem;
+    }
+    .font-pg {
+        font-size: 28px;
+    }
+    .whats-logo {
+        padding: 0 5px 0 5px;
+        width: 6%;
+        top: 7px;
+    }
+    .email-input {
+        margin: 0 0 0 0;
+    }
+    .form-input{
+        width: 85%;
+        margin: 0 0 1rem 0;
+        padding: 15px 52px 15px 10px;
+    }
+    .form-btn{
+        width: 95%;
+        font-size: 24px;
+        margin-bottom: 1rem;
+        margin-left: 0;
+    }
+    .card-features{
+        margin:0;
+    }
+    .custom-card{
+        font-size: 20px;
+    }
+    .odd-cls{
+        position: relative;
+        right: 4%;
+    }
+    .even-cls{
+        position: relative;
+        left: 4%;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 3rem 2rem 3rem;
+    }
+    .footer-content{
+        flex-direction: row;
+        padding: 0 0 1rem 0;
+    }
+    .footer-content-mobile{
+        padding: 0 6.5rem 0 0;
+        color: #666666;
+        font-size: 20px;
+    }
+    .a4, .fy4{
+        color: #666666;
+        font-size: 20px;
+    }
+    .footer-social-wrapper{
+        margin: 12px 0 12px 0;
+    }
+    .footer-social-content {
+        color: #4D4D4D;
+        font-size: 18px;
+    }
+    .main-wrapper{
+        padding: 10% 2%;
+    }
+}
+@media (min-width:320px) and (max-width:594px){
+    .footer {
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    .top-h1 {
+        font-size: 32px;
+    }
+    .main-top-h2{
+        margin: 0 1rem 1rem 1rem;
+    }
+    .font-pg {
+        font-size: 14px;
+        text-align: center;
+    }
+    .whats-logo{
+        top: 5px;
+    }
+    .email-wrapper{
+        padding: 2rem 0 2rem 0;
+    }
+    .form-input {
+        width: 68%;
+    }
+    .form-btn{
+        border-radius: 30px;
+        width: 88%;
+        font-size: 18px;
+    }
+    .card-credit {
+        padding: 0px 0px 0 0;
+    }
+    .custom-card {
+        font-size: 10px;
+    }
+    .email-wrapper {
+        padding: 2rem 0 1rem 0;
+    }
+    .footer {
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .footer-content-mobile {
+        padding: 0px 2rem 0 0;
+        font-size: 14px;
+    }
+    .a4, .fy4 {
+        font-size: 14px;
+    }
+    .footer-main-content {
+        font-size: 18px;
+    }
+    .footer-social-content{
+        font-size: 11px;
+    }
+    .footer-main-content{
+        margin: 0;
+    }
+}
+@media (min-width:360px) and (max-width:594px){
+    .top-h1 {
+        font-size: 36px;
+    }
+    .font-pg {
+        font-size: 16px;
+    }
+    .images-wrapper-mobile {
+        padding: 0 1rem 0 1rem;
+    }
+    .form-btn {
+        margin: 0 0 6px 0;
+    }
+    .form-btn{
+        padding: 12px 30px 12px 30px;
+    }
+    .footer-main-content {
+        font-size: 20px;
+    }
+    .footer-content-mobile {
+        padding: 0 2.375rem 0 0;
+    }
+    .footer-social-content {
+        font-size: 12px;
+    }
+}
+@media (min-width:390px) and (max-width:594px){
+    .top-h1 {
+        font-size: 42px;
+    }
+    .font-pg {
+        font-size: 18px;
+    }
+    .form-input {
+        width: 78%;
+    }
+    .form-btn {
+        width: 95%;
+    }
+    .custom-card {
+        font-size: 11px;
+    }
+    .images-wrapper-mobile {
+        padding: 0 1.375rem;
+    }
+    .footer-main-content {
+        font-size: 22px;
+    }
+    .footer-content-mobile {
+        padding: 0 3.5625rem 0 0;
+    }
+    .footer-social-content {
+        font-size: 14px;
+    }
+}
+@media (min-width:425px) and (max-width:594px){
+    .top-h1 {
+        font-size: 46px;
+    }
+    .font-pg {
+        font-size: 19px;
+    }
+    .custom-card {
+        font-size: 12px;
+    }
+    .images-wrapper-mobile {
+        padding: 0 1.5rem;
+    }
+    .footer-main-content {
+        font-size: 24px;
+    }
+    .footer-content-mobile {
+        padding: 0 4.25rem 0 0;
+    }
+}
+@media (min-width:462px) and (max-width:594px){
+    .top-h1 {
+        font-size: 50px;
+    }
+    .font-pg {
+        font-size: 20px;
+    }
+    .custom-card {
+        font-size: 14px;
+    }
+    .images-wrapper-mobile {
+        padding: 0 2.125rem;
+    }
+    .footer-main-content {
+        font-size: 26px;
+    }
+    .footer-content-mobile {
+        padding: 0 4.875rem 0 0;
+    }
+}
