@@ -2,6 +2,9 @@
     margin:0;
     padding:0;
 }
+body {
+    font-family: Neue Haas Unica Pro;
+}
 .main-wrapper{
     padding:2%;
 }
