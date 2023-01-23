@@ -31,6 +31,13 @@ body {
 }
 .main-top-h1{
     color: #F62B57;
+    text-shadow: 0px 1px 2px #000000;
+    text-decoration: none;
+}
+.typewrite{
+    transition: smooth;
+    text-decoration: none;
+    color:#F62B57;
 }
 .main-top-h2{
     margin: 0 0 1rem 0;
@@ -83,6 +90,7 @@ body {
     font-family: Neue Haas Unica Pro;
     font-weight: 700;
     cursor: pointer;
+    box-shadow: rgb(0 0 0 / 30%) -0.6px 2.4px 3.2px;
 }
 .btn-arrow {
     width: 15%;
