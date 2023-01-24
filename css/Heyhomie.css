@@ -31,7 +31,7 @@ body {
 }
 .main-top-h1{
     color: #F62B57;
-    text-shadow: 0px 2px 2px #000000;
+    /* text-shadow: 0px 2px 2px #000000; */
     text-decoration: none;
 }
 .typewrite{
@@ -85,7 +85,7 @@ body {
     }
 }
 .main-top-h2{
-    margin: 0 0 1rem 0;
+    margin: -1rem 0 1rem 0;
 }
 .font-pg{
     font-style: normal;
@@ -107,20 +107,20 @@ body {
     padding: 4rem 0 4rem 0;
 }
 .email-input {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 25px;
     text-align: center;
 }
 .form-input{
-    width: 330px;
+    width: 400px;
     line-height: 24px;
     padding: 10px 15px 10px 15px;
     border: 1px solid #000000;
     font-size: 18px;
-    box-shadow: rgb(0 0 0 / 30%) -1.6px 2.4px 3.2px;
+    /* box-shadow: rgb(0 0 0 / 30%) -1.6px 2.4px 3.2px; */
 }
 .form-btn {
     display: inline-flex;
-    width: 300px;
+    width: 335px;
     background-color: #F62B57;
     align-items: center;
     justify-content: center;
@@ -134,7 +134,7 @@ body {
     font-family: Neue Haas Unica Pro;
     font-weight: 700;
     cursor: pointer;
-    box-shadow: rgb(0 0 0 / 30%) -0.6px 2.4px 3.2px;
+    /* box-shadow: rgb(0 0 0 / 30%) -0.6px 2.4px 3.2px; */
 }
 .btn-arrow {
     width: 15%;
@@ -180,11 +180,12 @@ body {
     padding: 2rem 10rem 2rem 10rem;
 }
 .footer-main-content{
+    color: #333333;
     text-align: start;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 24px;
     font-family: Neue Haas Unica Pro;
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0;
 }
 .footer-content{
     display: flex;
@@ -196,6 +197,7 @@ body {
 }
 .footer-social-content {
     line-height: 24px;
+    color: #4D4D4D;
 }
 .fs2{
     text-align: start;
@@ -204,19 +206,19 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 12px 0 28px 0;
+    margin: 10px 0 19px 0;
 }
 .footer-link {
     width: 11%;
     text-align: start;
-    margin: 0 5px 0 0px;
+    margin: 0 10px 0 -5px;
 }
 .social-logo {
     width: 100%;
 }
 .footer-content-mobile a, .fy4 a, .a4 a{
     text-decoration: none;
-    color: black;
+    color: #666666;
 }
 @media (min-width:1001px){
     .images-wrapper-mobile{
@@ -224,9 +226,6 @@ body {
     }
 }
 @media (max-width:1000px){
-    .footer-content-mobile a, .fy4 a, .a4 a {
-        color: #666666;
-    }
     .images-wrapper-desktop{
         display: none;
     }
@@ -281,8 +280,11 @@ body {
         padding: 2rem 3rem 2rem 3rem;
     }
     .footer-content{
-        flex-direction: row;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         padding: 0 0 1rem 0;
+        column-gap: 25px;
     }
     .footer-content-mobile{
         padding: 0 6.5rem 0 0;
@@ -345,8 +347,9 @@ body {
         padding: 1rem 1rem 1rem 1rem;
     }
     .footer-content-mobile {
-        padding: 0px 2rem 0 0;
+        padding:0;
         font-size: 14px;
+        min-width: 60px;
     }
     .a4, .fy4 {
         font-size: 14px;
