@@ -29,67 +29,26 @@
                 <a href="#"><img src="images/Frame.svg" alt="Heyhomie-logo" class="top-logo" ></a>
             </div>
         <h1 class="main-top-h1 top-h1">
-            <a href="" class="typewrite" data-period="500" data-type='[ "Selling", "Re-Targeting", "Payment Capturing", "Shipping", "Order Management", "Customer Insights" ]'>
-                <span class="wrap"></span>
-                </a>
-                <script>
-                            var TxtType = function(el, toRotate, period) {
-                            this.toRotate = toRotate;
-                            this.el = el;
-                            this.loopNum = 0;
-                            this.period = parseInt(period, 5) || 1000;
-                            this.txt = '';
-                            this.tick();
-                            this.isDeleting = false;
-                            };
-
-                        TxtType.prototype.tick = function() {
-                            var i = this.loopNum % this.toRotate.length;
-                            var fullTxt = this.toRotate[i];
-
-                            if (this.isDeleting) {
-                            this.txt = fullTxt.substring(0, this.txt.length - 1);
-                            } else {
-                            this.txt = fullTxt.substring(0, this.txt.length + 1);
-                            }
-
-                            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-                            var that = this;
-                            var delta = 150 - Math.random() * 100;
-
-                            if (this.isDeleting) { delta /= 2; }
-
-                            if (!this.isDeleting && this.txt === fullTxt) {
-                            delta = this.period;
-                            this.isDeleting = true;
-                            } else if (this.isDeleting && this.txt === '') {
-                            this.isDeleting = false;
-                            this.loopNum++;
-                            delta = 500;
-                            }
-
-                            setTimeout(function() {
-                            that.tick();
-                            }, delta);
-                            };
-
-                        window.onload = function() {
-                            var elements = document.getElementsByClassName('typewrite');
-                            for (var i=0; i<elements.length; i++) {
-                                var toRotate = elements[i].getAttribute('data-type');
-                                var period = elements[i].getAttribute('data-period');
-                                if (toRotate) {
-                                new TxtType(elements[i], JSON.parse(toRotate), period);
-                                }
-                            }
-                            // INJECT CSS
-                            var css = document.createElement("style");
-                            css.type = "text/css";
-                            css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-                            document.body.appendChild(css);
-                            };
-                </script>
+            <h1 class="moving__title main-top-h1 top-h1" id="loop">
+                <div class="scrollable">
+                    <div class="scrolling-text">
+                        <span class="text-to-scroll">Selling</span>
+                    </div>
+                    <div class="scrolling-text">
+                        <span class="text-to-scroll">Re-Targeting</span>
+                    </div>
+                    <div class="scrolling-text">
+                        <span class="text-to-scroll">Payment Capturing</span>
+                    </div>
+                    <div class="scrolling-text">
+                        <span class="text-to-scroll">Shipping</span>
+                    </div>
+                    <div class="scrolling-text">
+                        <span class="text-to-scroll">Order Management</span>
+                    </div>
+                    <div class="scrolling-text">
+                        <span class="text-to-scroll">Customer Insights</span>
+                    </div>
         </h1>
         <h2 class="main-top-h2 top-h1">
             Made Easy for Small Businesses
@@ -101,10 +60,23 @@
             <form action="" method="post" enctype="text/plain" class="email-input">
                 <input type="email" id="email" placeholder="Enter your email" class="form-input">
                 <button type="submit" class="form-btn">JOIN THE WAITLIST <img src="images/right-arrow.svg" alt="right-arrow" class="btn-arrow"/></button>
-                <!-- <input type="submit" value="JOIN THE WAITLIST" class="form-btn"><img src="../Heyhomie/images/right-arrow.svg" alt="right-arrow" class="btn-arrow"/> -->
+
             </form>
+        
         <div class="card-features">
-            <p><span class="card-credit custom-card"><img src="images/tick.svg" class="tick-mark" alt="tick-mark"/>No Credit Card Required</span> <span class="card-features custom-card"><img src="images/tick.svg" class="tick-mark" alt="tick-mark"/>All Features Included</span></p>
+            <div class="card-credit custom-card">
+                <img src="images/tick.svg" class="tick-mark" alt="tick-mark"/>
+                <span>
+                    No Credit Card Required
+                </span>
+            </div>
+            <div class="card-included custom-card">
+                <img src="images/tick.svg" class="tick-mark" alt="tick-mark"/>
+                <span>
+                    All Features Included
+                </span>
+            </div>
+            <!-- <span class="card-credit custom-card"><img src="images/tick.svg" class="tick-mark" alt="tick-mark"/>No Credit Card Required</span> <span class="card-features custom-card"><img src="images/tick.svg" class="tick-mark" alt="tick-mark"/>All Features Included</span></p> -->
         </div>
         </div>
         <div class="images-wrapper-desktop">

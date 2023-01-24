@@ -40,6 +40,50 @@ body {
     color:#F62B57;
     -webkit-text-stroke: 1px black;
 }
+.moving__title {
+    display: flex;
+    width: 100%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 61px;
+    height: 68px;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+}
+.moving__title .scrollable {
+    position: absolute;
+    top: 0px;
+    animation: 12s cubic-bezier(0.4, 0, 0.2, 1) 2s infinite normal none running bounce-step;
+    
+}
+.scrolling-text{
+    height: 68px;
+}
+@keyframes bounce-step {
+    0% {
+        top: 0px;
+    }
+    15% {
+        top: -68px;
+    }
+    33% {
+        top: -136px;
+    }
+    48% {
+        top: -204px;
+    }
+    66% {
+        top: -272px;
+    }
+    81% {
+        top: -340px;
+    }
+    99% {
+        top: 0px;
+    }
+}
 .main-top-h2{
     margin: 0 0 1rem 0;
 }
@@ -97,24 +141,33 @@ body {
     vertical-align: middle;
     padding: 0px 0px 0px 10px;
 }
+.card-features{
+    margin: 10px 0 0 0;
+    display: flex;
+    align-items: center;
+}
 .custom-card{
     color:#808080;
     font-family: Neue Haas Unica Pro;
     font-size: 14px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
 }
 .card-credit {
     padding: 0px 10px 0 0;
 }
-.card-features{
-    margin: 10px 0 0 0;
+.card-included{
+
 }
 .tick-mark{
-    width: 4%;
-    padding: 0 5px 0px 0px;
+    width: 12px;
+    margin-right: 5px;
+
 }
 .images-wrapper-desktop{
     padding: 0 10rem 0 10rem;
+    pointer-events: none;
 }
 .images-wrapper-desktop img{
     width: 100%;
@@ -280,7 +333,7 @@ body {
         font-size: 18px;
     }
     .card-credit {
-        padding: 0px 0px 0 0;
+        padding: 0 10px 0 0;
     }
     .custom-card {
         font-size: 10px;
