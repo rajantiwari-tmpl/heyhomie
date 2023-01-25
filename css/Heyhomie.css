@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    scroll-behavior: smooth;
 }
 body {
     font-family: Neue Haas Unica Pro;
@@ -220,6 +221,16 @@ body {
     text-decoration: none;
     color: #666666;
 }
+@media (min-width:895px){
+    .h2-mobile{
+        display: none;
+    }
+}
+@media (max-width:894px){
+    .h2-desktop{
+        display:none;
+    }
+}
 @media (min-width:1001px){
     .images-wrapper-mobile{
         display: none;
@@ -365,7 +376,7 @@ body {
         font-size: 9px;
     }
     .tick-mark {
-        width: 8px;
+        width: 9px;
         margin-right: 2px;
     }
     .img1{
