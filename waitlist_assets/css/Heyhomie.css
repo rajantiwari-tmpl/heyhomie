@@ -130,6 +130,7 @@ body {
     border: 1px solid #000000;
     font-size: 18px;
     /* box-shadow: rgb(0 0 0 / 30%) -1.6px 2.4px 3.2px; */
+    display: none;
 }
 .form-btn {
     display: inline-flex;
@@ -199,6 +200,7 @@ body {
     font-size: 24px;
     font-family: Neue Haas Unica Pro;
     margin: 0 0 5px 0;
+    text-align: center;
 }
 .footer-content{
     display: flex;
@@ -213,11 +215,11 @@ body {
     color: #4D4D4D;
 }
 .fs2{
-    text-align: start;
+    text-align: center;
 }
 .footer-social-wrapper {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 10px 0 19px 0;
 }
@@ -232,6 +234,10 @@ body {
 .footer-content-mobile a, .fy4 a, .a4 a{
     text-decoration: none;
     color: #666666;
+}
+#footer{
+    display: flex;
+    justify-content: center;
 }
 @media (min-width:895px){
     .h2-mobile{
@@ -281,7 +287,8 @@ body {
         padding: 15px 52px 15px 10px;
     }
     .form-btn{
-        width: 95%;
+        /* width: 95%; */
+        width: 100%;
         font-size: 24px;
         margin-bottom: 1rem;
         margin-left: 0;
@@ -506,7 +513,8 @@ body {
         width: 64%;
     }
     .form-btn {
-        width: 81%;
+        /* width: 81%; */
+        width: 100%;
         word-spacing: 1px;
         font-size: 16px;
     }
@@ -563,7 +571,8 @@ body {
         height: 40px;
     }
     .form-btn {
-        width: 79%;
+        /* width: 79%; */
+        width: 100%;
     }
     .custom-card {
         font-size: 12px;
@@ -625,4 +634,8 @@ body {
     .footer-social-content {
     font-size: 12px;
     }
+}
+
+.email-wrapper a{
+    text-decoration: none;
 }
